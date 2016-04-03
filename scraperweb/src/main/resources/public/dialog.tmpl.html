@@ -1,0 +1,45 @@
+<md-dialog aria-label="Mango (Fruit)"  ng-cloak>
+  <form>
+    <md-toolbar>
+      <div class="md-toolbar-tools">
+        <h2>Reqeust Scrape</h2>
+        <span flex></span>
+        <md-button class="md-icon-button" ng-click="cancel()">
+          <md-icon md-svg-src="img/icons/ic_close_24px.svg" aria-label="Close dialog"></md-icon>
+        </md-button>
+      </div>
+    </md-toolbar>
+    <md-dialog-content>
+      <div class="md-dialog-content">
+      
+      
+	      <md-input-container class="md-icon-float md-block">
+	      <!-- Use floating label instead of placeholder -->
+	      <label>Target URL</label>
+	      <input ng-model="targetUrl" type="text">
+	    </md-input-container>
+	    
+	    	      <md-input-container class="md-icon-float md-block">
+	    <label>Target CSS Path</label>
+	      <input ng-model="targetCssPath" type="text">
+	      </md-input-container>
+        <p>
+          Currently, Simple Scrape is supported. (Target Url and Target CSS Path.)   
+        </p>
+        <p>
+        Later on, more complex Scraping is supported.
+        </p>
+      </div>
+    </md-dialog-content>
+    <md-dialog-actions layout="row">
+      
+      <span flex></span>
+      <md-button ng-click="submit()">
+       Submit
+      </md-button>
+      <md-button ng-click="cancel()" style="margin-right:20px;">
+        Cancel
+      </md-button>
+    </md-dialog-actions>
+  </form>
+</md-dialog>
